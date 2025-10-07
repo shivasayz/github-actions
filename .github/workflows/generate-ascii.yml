@@ -8,6 +8,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+
             - name: Install Cowsay Program
               run: sudo apt-get install cowsay -y
 
@@ -21,6 +24,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+
             - name: Sleep for 10 sec
               run: sleep 10
 
@@ -31,6 +37,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+              
             - name: Read file
               run: cat dragon.txt
 
