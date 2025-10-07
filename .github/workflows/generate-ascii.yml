@@ -13,6 +13,9 @@ jobs:
 
             - name: list repo files
               run: ls -ltra
+
+            - name: allowing file permissions
+              run: chmod +777 ./ascii-script.sh
             
             - name: Executing Shell Script 
               run: ./ascii-script.sh
